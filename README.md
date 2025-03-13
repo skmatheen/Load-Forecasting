@@ -27,34 +27,34 @@ where:
 
 The coefficients are computed using **Ordinary Least Squares Estimation (OLSE)**.
 
-
 ## How to Use
 
-### 1️ Clone the Repository
+***Step 1️⃣: Clone the Repository***
+
 To download the project, clone it from GitHub:
-```bash
 git clone https://github.com/YOUR_USERNAME/Load_Forecasting.git
-cd Load_Forecasting
 
-### 2️⃣ Install Dependencies
-pip install -r requirements.txt
+***Step 2️⃣: Install Dependencies***
 
-### 3️⃣ Run the Model
+Ensure you have Python installed, then install the required packages:
+pip install pandas scikit-learn numpy matplotlib
+
+***Step 3️⃣: Run the Model***
+
 Step 1: Train the Model
 Run the script to train the quadratic regression model and compute coefficients:
-
 python experiment.py
-
 Step 2: Forecast Load
 The script will automatically apply the trained model to predict load for 2014-2018.
-
 Step 3: Verify Predictions
 The script will perform partial verification by re-computing predictions for a randomly selected month.
 
-### 4️⃣ Output
+***Step 4: Output***
 After running the script:
 Predicted load values will be displayed.
 Execution times for each server and verification will be printed.
+
+
 
 ## License
 This project is licensed under the **MIT License**.
